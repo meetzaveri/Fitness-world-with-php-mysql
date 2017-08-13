@@ -1,0 +1,30 @@
+
+<?php
+session_start();
+
+$_SESSION['usr_id']=
+if(isset($_SESSION['usr_id'])) {
+    header("Location: index.php");
+}
+
+include_once 'dbconnect.php';
+?>
+    <?php
+     
+    $sql = mysql_query("SELECT * FROM users WHERE id='$_SESSION['usr_id']' LIMIT 1");
+    while($row = mysql_fetch_assoc($sql)){
+        $email = $row[email];
+        //--repeat for each field you want to edit
+    }
+    ?>
+     
+    <html>
+    <form name="editprofile" action="process.php" method="post">
+     
+    E-Mail Address: <input type="text" name="email" value="<?=$email; ?>" />
+     
+    //-repeat for each field
+    </form>
+     
+     
+
