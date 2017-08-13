@@ -1,0 +1,52 @@
+body
+{
+	background:#033;
+	color:#FFF;
+	font-family:tahoma;
+	font-size:12px;
+}
+
+#box
+{
+	background:#063;
+	padding:10px;
+	width:50%;
+	margin:50px auto;
+}
+
+input
+{
+	background:#333;
+	color:#FFF;
+	border:0px;
+	padding:10px;
+	margin:5px 0px;
+}
+
+a
+{
+	text-decoration:none;
+	color:#FFF;	
+}
+
+#url
+{
+	background:#333;
+	padding:10px;
+	margin:5px;
+}
+
+b
+{
+	text-decoration:none;
+	color:#FFF;	
+}
+
+#back
+{
+	background:#333;
+	padding:10px;
+	margin:5px;
+	text-align:right;
+	font-size:12px;
+}
